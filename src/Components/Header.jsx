@@ -1,15 +1,19 @@
 import { Link } from "react-router-dom";
+import vitelogo from "../../public/vite.svg";
 
 function Header() {
   return (
-    <header className="flex justify-between items-center py-2 mb-8">
-      <div className="text-3xl px-4">my SITE</div>
-      <nav className="flex gap-2 mr-4">
+    <header className="flex justify-between items-center p-4 mb-8">
+      <div>
+        <img src={vitelogo} alt="" />
+      </div>
+
+      <nav className="flex gap-2">
         <Link to="/">Home</Link>
         <Link to="/contact">Contact</Link>
         <Link to="/students">Students</Link>
         <Link to="/colorPicker">Color Picker</Link>
-      </nav>
+      </nav> 
     </header>
   );
 }

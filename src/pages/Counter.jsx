@@ -12,8 +12,8 @@ const Counter = () => {
     setCount( c => c - 1);
   }
   return (
-    <div className="mx-5 text-center">
-      <h1 className="text-2xl font-bold underline">Counter Game</h1>
+    <div className="text-center">
+      <h1 className="text-2xl font-bold p-2 w-full bg-blue-500">Counter Game</h1>
       <div className="sp-font">{count} </div>
       <div className="">
         <button onClick={handleIncrement}>Add</button>
